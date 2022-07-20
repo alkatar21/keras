@@ -8,6 +8,42 @@ py_library(
 )
 
 py_library(
+    name = "expect_haiku_installed",
+    # This is a dummy rule used as a haiku dependency in open-source.
+    # We expect haiku to already be installed on the system, e.g. via
+    # `pip install dm-haiku'
+    visibility = ["//visibility:public"],
+    deps = [],
+)
+
+py_library(
+    name = "expect_flax_installed",
+    # This is a dummy rule used as a flax dependency in open-source.
+    # We expect flax to already be installed on the system, e.g. via
+    # `pip install flax'
+    visibility = ["//visibility:public"],
+    deps = [],
+)
+
+py_library(
+    name = "expect_jax_installed",
+    # This is a dummy rule used as a jax dependency in open-source.
+    # We expect jax to already be installed on the system, e.g. via
+    # `pip install jax'
+    visibility = ["//visibility:public"],
+    deps = [],
+)
+
+py_library(
+    name = "expect_jax2tf_installed",
+    # This is a dummy rule used as a jax2tf dependency in open-source.
+    # We expect jax2tf to already be installed on the system, e.g. via
+    # `pip install jax'
+    visibility = ["//visibility:public"],
+    deps = [],
+)
+
+py_library(
     name = "expect_h5py_installed",
     # This is a dummy rule used as a h5 dependency in open-source.
     # We expect h5py to already be installed on the system, e.g. via

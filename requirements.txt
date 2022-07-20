@@ -1,5 +1,12 @@
 # All the required dependencies should come with tf-nightly package.
 # The rest of the packages are mostly used for testing purpose.
+
+# TODO(fhertschuh) change to "dm-haiku" after the next release
+# dm-haiku 0.0.9 won't work because we need the signature propagation logic
+dm-haiku @ git+https://github.com/deepmind/dm-haiku
+flax
+jax[cpu]
+jaxlib
 pandas
 pydot
 scipy ~= 1.7.2

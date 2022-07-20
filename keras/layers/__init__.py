@@ -72,6 +72,10 @@ from keras.layers.core.tf_op_layer import InstanceProperty
 from keras.layers.core.tf_op_layer import SlicingOpLambda
 from keras.layers.core.tf_op_layer import TFOpLambda
 
+# JAX layers.
+from keras.layers.jax.flax_layer import FlaxLayer
+from keras.layers.jax.jax_layer import JaxLayer
+
 # Locally-connected layers.
 from keras.layers.locally_connected.locally_connected1d import (
     LocallyConnected1D,
